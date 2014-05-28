@@ -29,3 +29,33 @@ header h1 {
 	text-align: center;
 	padding-top: 30px;
 }
+
+.intro {
+	width:40%;
+	margin: 20px;
+}
+
+/* image of janet */
+.intro .janet {
+	width: 160px;
+	clear: left:
+	float: left;
+	display: block;
+	height: auto;
+	margin: 20px;
+}
+
+/* span tag with "Janet" in it*/
+.bio {
+	font-size: 20pt;
+	font-weight: bold;
+	font-family: "Adobe Caslon Pro", "Book Antiqua", sans-serif;
+}
+
+p {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.indentp {
+	margin-left: 30px;	
+}
