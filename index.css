@@ -85,3 +85,7 @@ p {
 	font-family: Verdana, Geneva, sans-serif;
 	margin-bottom: 10px;
 }
+
+nav {
+    display: inline;
+}
