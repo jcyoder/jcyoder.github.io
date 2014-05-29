@@ -78,20 +78,31 @@ h1 {
 	
 }
 
-.projects ul {
+.projects ul.projlist {
 	width: 100%;
 	margin-left: 30px;
 	
 }
 
-.projects ul li {
+.projects ul.projlist li {
 	font-weight: bold;
 	font-size: 18pt;
+	margin-top: 10px;
 }
 
-.projects ul li p {
+.projects ul.projlist li p {
 	font-weight: normal;
 	font-size: 12pt;
 	font-family: Verdana, Geneva, sans-serif;
-	margin-bottom: 10px;
+	/*margin-bottom: 10px;*/
+}
+
+.listoflinks {
+	list-style-type: none;
+	text-align:right;
+}
+
+.listoflinks li {
+	
+	display: inline
 }
