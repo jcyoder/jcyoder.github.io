@@ -33,9 +33,9 @@ h1 {
 /* intro section */
 .intro {
 	width:30%;
-	margin: 20px;
+	/*margin: 20px;*/
 	float: left;
-	display: inline;
+/*	display: inline;*/
 }
 
 /* image of janet */
@@ -48,6 +48,7 @@ h1 {
 
 /* span tag with "Janet" in it*/
 .bio {
+    float: left;
 	font-size: 20pt;
 	font-weight: bold;
 	font-family: "Adobe Caslon Pro", "Book Antiqua", sans-serif;
