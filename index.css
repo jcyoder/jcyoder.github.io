@@ -9,6 +9,7 @@ body, header, section, aside, footer, nav, p, span {
 
 body {
 	width: 100%;
+    min-width: 400px;
 	font-family: "Adobe Caslon Pro", "Book Antiqua", sans-serif;
 	background: url(images/backgroundgrain.png) top left;
 }
@@ -32,13 +33,11 @@ header {
 
 h1 {
 	text-align: center;
-	/*padding-top: 10px;*/
-	
 }
 
 /* intro section */
 .intro {
-	width:30%;
+	width: 30%;
 	/*margin: 20px;*/
 	float: left;
 /*	display: inline;*/
@@ -47,6 +46,7 @@ h1 {
 .intro h1 {
 	text-align: left;
 	margin-left: 30px;
+    min-width: 322px;
 }
 
 /* image of janet */
@@ -70,11 +70,13 @@ h1 {
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 12pt;
 	margin-left: 30px;
+    min-width: 322px;
    
 }
 
 .projects {
 	width:40%;
+    min-width: 415px;
 	margin: 20px 20px 20px 40px;
 	float: left;
 	display: inline;
@@ -82,6 +84,9 @@ h1 {
 	
 }
 
+.projects p.projdesc {
+    min-width: 415px;
+}
 .projects ul.projlist {
 	width: 100%;
 	margin-left: 30px;
