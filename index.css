@@ -99,6 +99,15 @@ h1 {
 	margin-right: 30px;
 }
 
+.reflist li {
+    margin-left: 20px; 
+    line-height: .75em;
+}
+.reflist li a{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size:12pt;
+    font-weight: normal;
+}
 .listoflinks {
 	list-style-type: none;
 	text-align:right;
