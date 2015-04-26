@@ -99,6 +99,9 @@ footer {
   color: #202040;
 }
 
+.row-wrapper {
+    text-align:center;
+  }
 
 .web-dev,
 .photoshop,
@@ -248,6 +251,11 @@ a.btn.btn-default:active {
 
   .janet-portfolio {
     margin-top: 94px;
+  }
+
+  .skills {
+
+    display: none;
   }
 }
 
