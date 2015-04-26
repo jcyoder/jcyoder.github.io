@@ -42,7 +42,7 @@ a:focus, a:hover {
   width: 100%;
   background-color: #7373e5;
   color: #fff;
-  font-size: 24px;
+  font-size: 22px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -56,6 +56,11 @@ button.btn.btn-default:active {
   margin-right: auto;
   margin-left: auto;
   display: block;
+}
+
+footer {
+
+  margin-top: 20px;
 }
 /*========== Homepage picture/header ==========*/
 
@@ -150,8 +155,8 @@ a.btn.btn-default:active {
 /*========== About ==========*/
 .about-wrapper {
   margin: 0px;
-  padding: 30px 20px 34px 20px;
-  background: #fff url("../images/portfolio2.png") no-repeat;
+  padding: 0px;
+  background: #999 url("../images/portfolio2.png") no-repeat;
   background-size: 100%;
   background-position: 0px;
 }
@@ -170,6 +175,11 @@ a.btn.btn-default:active {
 .about-wrapper a:active {
   color: #333366;
 } 
+
+.about-wrapper .container {
+
+  padding: 10px 10px 20px 10px;
+}
 .about-me  {
   
   margin-top: 20px;
@@ -193,7 +203,29 @@ a.btn.btn-default:active {
 
 /*========== Responsiveness ==========*/
 
+@media screen and (max-width: 1200px) {
+  .btn-group-justified>.btn-group .btn {
+    font-size: 18px;
+  }
+
+  
+}
+
+@media screen and (max-width: 992px) {
+  .btn-group-justified>.btn-group .btn {
+    font-size: 13px;
+  }
+
+  .about-wrapper {
+
+    background: #999;
+  }
+}
 @media screen and (max-width: 767px) {
+
+  .btn-group-justified>.btn-group .btn {
+    font-size: 11px;
+  }
 
   .navbar-default {
     height: 94px;
