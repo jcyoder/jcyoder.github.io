@@ -1,126 +1,411 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Janet Yoder - Portfolio</title>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen">
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+    <link href="css/style.css" rel="stylesheet">
 
-<html>
-    <head>
-        <title>Janet Yoder's Portfolio</title>
-		<link href="index.css" rel="stylesheet" type="text/css" />
-    </head>
-	
-    <body>
-		
-        <header>
-			
-			<h1 class="title">Janet Yoder's Portfolio</h1>
-			
-        </header>
-		
-		<div class="intro">
-			<img class="janet" src="images/Janet.jpg" alt="Photo of Janet"/>
-            <h1>About Me...</h1>
-            <p>
-                Hello! Welcome to my portfolio page.  I am a Colorado native, born in Denver and raised in Arvada. 
-                I came to Northern Colorado in 1990 and earned a Bachelor's in mathematics with an emphasis 
-                in computer science. I have spent my entire career working on software development teams in a variety of roles. <br /> <br />
-                Most recently, I have been working as a Web developer and graphic designer.  Before this adventure, I worked in product/program management and as a Scrum Master. 
-            </p>
-			<br />
-            <h1>Resume</h1>
-            <a href="resume/jyoderwbresume.pdf">View my resume</a><br /><br />
-            
-            <h1>Graphic Software Projects</h1>
-            <ul class="graphic">
-                <li>Photoshop Graphic Work
-					<p>
-						Links to Photoshop sample work.
-						<ul>
-							<li><a href="https://github.com/jcyoder/Graphic-Design/tree/gh-pages/photoshop/psd2014Work.pdf"> 2014  artwork</a></li>
-	                        <li><a href="https://github.com/jcyoder/Graphic-Design/tree/gh-pages/photoshop/photoshopArtwork.pdf">older school artwork</a></li>
-							<li><a href="https://github.com/jcyoder/Graphic-Design/tree/gh-pages/photoshop">View source files</a></li>
-						</ul>
-					</p>
-				</li>
-                <li>Illustrator Graphic Work <br />
-					<p>
-						Links to Illustrator sample work.
-                        <a href="https://github.com/jcyoder/Graphic-Design/tree/gh-pages/illustrator/illustrator.pdf">PDF of artwork</a>
-						<a href="https://github.com/jcyoder/Graphic-Design/tree/gh-pages/illustrator">View source files</a>
-					</p>
-				</li>
-                <li>InDesign Graphic Work <br />
-					<p>
-						Links to Illustrator sample work.
-                        <ul class="reflist">
-                            <li><a href="https://github.com/jcyoder/Graphic-Design/tree/gh-pages/inDesign/JYoderCalendar.pdf">PDF of calendar</a></li>
-                            <li><a href="https://github.com/jcyoder/Graphic-Design/tree/gh-pages/inDesign/BookletFinal/Booklet.pdf">PDF of 8 page booklet</a></li>
-                            <li><a href="https://github.com/jcyoder/Graphic-Design/tree/gh-pages/inDesign">View source files</a></li>
-                        </ul>
-					</p>
-				</li>
+
+    <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <header>
+    <div class="janet-header">
+      <h1 class="text-center">Janet Yoder's Portfolio</h1>
+      <h2 class="text-center">Web Development, Graphic Design, Project Management</h2>
+    </div>
+  </header>
+  
+  <div class="about-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+            <h2>About Me</h2>
+            <p>Hello! Welcome to my portfolio page. I am a Colorado native, born in Denver and raised in Arvada. I came to Northern Colorado in 1990 and earned a Bachelor's in mathematics with an emphasis in computer science. I have spent my entire career working on software development teams in a variety of roles.</p>
+            <p>Most recently, I have been working as a Web developer and graphic designer. Before this adventure, I worked in product/program management and as a Scrum Master.</p>
+
+            <a href="resume/jyoderwbresume.pdf" class="btn btn-default btn-lg">View My Resume</a>
+        </div>
+        <div class="col-md-6">
+          &nbsp;
+        </div>
+      </div>
+    </div>
+  </div> <!--about-wrapper -->
+  <div class="portfolio-content"> 
+    <div class="container"> 
+      <p>&nbsp;</p>
+      <h2>Click on the buttons to see information and sample work</h2>
+      <p>&nbsp;</p>
+      <div class="btn-group btn-group-justified" role="group" aria-label="...">
+        <div class="btn-group" role="group">
+          <a href="#web-development"class="btn btn-default">Web Development</a>
+        </div>
+        <div class="btn-group" role="group">
+          <a href="#photoshop" class="btn btn-default">Adobe PhotoShop</a>
+        </div>
+        <div class="btn-group" role="group">
+          <a href="#illustrator" class="btn btn-default">Adobe Illustrator</a>
+         </div>
+        <div class="btn-group" role="group">
+          <a href="#indesign" class="btn btn-default">Adobe InDesign</a>
+        </div>
+      </div> <!--btn-group -->
+      <p>&nbsp;</p>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="web-dev-wrapper">  
+            <div class="web-dev">
+              <h2 id="web-development">Web Development</h2>
+            </div> <!--web-dev -->
+            <p>&nbsp</p>
+            <p><strong>NOTE:</strong> The sites may not look the same as when first published since the client can make changes to the site content/files themselves.  Sometimes, they know enough to be dangerous and produce interesting results!</p>
+            <p>&nbsp</p>
+            <div class="row">
+              <div class="col-sm-12 col-md-4">
+                <div class="thumbnail">
+                  <a class="fancybox" href="images/stuffhome.png" target="_blank">
+                    <img class="img-responsive" src="images/stuffhome.png" alt="www.stuffnmallows.com">
+                  </a>
+                  <div class="caption">
+                    <h3><a href="http://www.stuffnmallows.com/" target="_blank">www.stuffnmallows.com</a></h3>
+                    <p>This site is created with Bootstrap 3, HTML5, CSS3, and is incorporated with the AllProWebTool's platform (contains modules such as a shopping cart and blogging). The site makes use of a rotating image slider and contains a blog. The site is responsive.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <div class="thumbnail">
+                  <a class="fancybox" href="images/connecting.png" target="_blank">
+                    <img class="img-responsive" src="images/connecting.png" alt="www.chirocareftc.com">
+                  </a>
+                  <div class="caption">
+                    <h3><a href="http://www.theconnectingexperts.com/" target="_blank">www.theconnectingexperts.com</a></h3>
+                    <p>This site is created with Bootstrap 3, HTML5, CSS3 and is incorporated with the AllProWebTool's platform. The site makes use of Bootstrap panels and a rotating image slider.  Videos are also embedded into the site. The site is responsive.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <div class="thumbnail">
+                  <a class="fancybox" href="images/drnuzum.png" target="_blank">
+                    <img class="img-responsive" src="images/drnuzum.png" alt="www.chirocareftc.com">
+                  </a>
+                  <div class="caption">
+                    <h3><a href="http://www.drnuzum.com/" target="_blank">www.drnuzum.com</a></h3>
+                    <p>This site is created with Bootstrap 3, HTML5, CSS3 and is incorporated with the AllProWebTool's platform (contains shopping cart, blogging, and testimonials).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-4">
+                <div class="thumbnail">
+                  <a class="fancybox" href="images/acorncapitalventures.png" target="_blank">
+                    <img class="img-responsive" src="images/acorncapitalventures.png" alt="www.acorncapitalventures.com">
+                  </a>
+                  <div class="caption">
+                    <h3><a href="http://acorncapitalventures.com/" target="_blank">www.acorncapitalventures.com</a></h3>
+                    <p>This site is created with Bootstrap 3, HTML5, CSS3, and is incorporated with the AllProWebTool's platform. It contains a sign-up box and rotating image slider.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <div class="thumbnail">
+                  <a class="fancybox" href="images/innovationews.png" target="_blank">
+                    <img class="img-responsive" src="images/innovationews.png" alt="www.innovationews.com">
+                  </a>
+                  <div class="caption">
+                    <h3><a href="http://www.innovationews.com/" target="_blank">www.innovationews.com</a></h3>
+                    <p>This site is created with Bootstrap 3, HTML5, CSS3 and is incorporated with the AllProWebTool's platform. The client desired to have the site look the same as their previous site.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <div class="thumbnail">
+                  <a class="fancybox" href="images/wordparts.png" target="_blank">
+                    <img class="img-responsive" src="images/wordparts.png" alt="www.nextgenerationsys.com">
+                  </a>
+                  <div class="caption">
+                    <h3><a href="http://www.nextgenerationsys.com" target="_blank">www.nextgenerationsys.com</a></h3>
+                    <p>This site is created with Bootstrap 3, HTML5, and CSS3. The site is responsive.  I do not take credit for any of the demos on the site, as they were done by someone else. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-4">
+                <div class="thumbnail">
+                  <a class="fancybox" href="images/thekitchen.png" target="_blank">
+                    <img class="img-responsive" src="images/thekitchen.png" alt="The Kitchen">
+                  </a>
+                  <div class="caption">
+                    <h3><a href="http://jcyoder.github.io/NewKitchen/index.html" target="_blank">http://jcyoder.github.io/NewKitchen/index.html</a></h3>
+                    <p>This five page site uses HTML5 and CSS3 to demonstrate the use of HTML forms, a Google form, an embedded Google map, tables, AJAX calls, @media for responsive design and a small amount of jQuery.</p>
+                    <a class="projlinks" href="https://github.com/jcyoder/NewKitchen/tree/gh-pages" target="_blank">View source code</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <div class="thumbnail">
+                  <a class="fancybox" href="images/todomvc.png" target="_blank">
+                    <img class="img-responsive" src="images/todomvc.png" alt="Todo app">
+                  </a>
+                  <div class="caption">
+                    <h3><a href="http://jcyoder.github.io/todo-app/index.html" target="_blank">http://jcyoder.github.io/todo-app/index.html</a></h3>
+                    <p>Todos demonstrates the use of HTML5, CSS3, and jQuery to allow users to add, remove, edit, cross off, and filter todo list items.</p>
+                    <a href="https://github.com/jcyoder/todo-app/tree/gh-pages" target="_blank">View source code</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <div class="thumbnail">
+                  <a class="fancybox" href="images/calculator.png" target="_blank">
+                    <img class="img-responsive" src="images/calculator.png" alt="Calculator App">
+                  </a>
+                  <div class="caption">
+                    <h3><a href="http://jcyoder.github.io/Calculator/calculator.html" target="_blank">http://jcyoder.github.io/Calculator/calculator.html</a></h3>
+                    <p>This tool uses Traditional HTML5, CSS3 and JavaScript event handlers to create a basic calculator.</p>
+                    <a href="https://github.com/jcyoder/Calculator/tree/gh-pages" target="_blank">View source code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-4">
+                <div class="thumbnail">
+                  <a class="fancybox" href="images/ChiroCareFortCollins.png" target="_blank">
+                    <img class="img-responsive" src="images/ChiroCareFortCollins.png" alt="www.chirocareftc.com">
+                  </a>
+                  <div class="caption">
+                    <h3><a href="http://www.chirocareftc.com/" target="_blank">www.chirocateftc.com</a></h3>
+                    <p>This site is created with Bootstrap 3, HTML5, CSS3. The site makes use of Bootstrap panels and a rotating image slider.  Videos are also embedded into the site. The site is partially responsive.</p>
+                  </div>
+                </div>
+              </div> 
+              <div class="col-sm-12 col-md-4">
+                <div class="thumbnail">
+                  <a class="fancybox" href="images/thepaperpetal.png" target="_blank">
+                    <img class="img-responsive" src="images/thepaperpetal.png" alt="The Kitchen">
+                  </a>
+                  <div class="caption">
+                    <h3><a href="http://jcyoder.github.io/ThePaperPetal/index.html" target="_blank">http://jcyoder.github.io/ThePaperPetal/index.html</a></h3>
+                    <p>Static website built with Bootstrap. Makes use of carousels, panels and thumbnail views. Added in the fancyBox version 2 library as well.</p>
+                    <a href="https://github.com/jcyoder/ThePaperPetal/tree/gh-pages" target="_blank">View source code</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                &nbsp;
+              </div>
+            </div>
+            <div class="back-to-top-button pull-right"></div>
+          </div> <!--web-dev-wrapper-->
+          <p>&nbsp;</p>
+          <div class="photoshop-wrapper">
+            <div class="photoshop">
+              <h2 id="photoshop">Adobe Photoshop</h2>
+            </div>
+            <p>&nbsp;</p>
+              <h3>Links to PDF and .PSD files of artwork</h3>
+              <p>Here you will find downloadable PDFs of my artwork as well as links to the .psd files.  I have the artwork divided into my most recent work and then older school artwork.  The most recent artwork is shown below.</p>
+                  <ul>
+                    <li><a href="https://github.com/jcyoder/Graphic-Design/tree/gh-pages/photoshop/psd20142015Work.pdf" target="_blank"> 2014-2015  artwork</a></li>
+                    <li><a href="https://github.com/jcyoder/Graphic-Design/tree/gh-pages/photoshop/photoshopArtwork.pdf" target="_blank">older school artwork</a></li>
+                    <li><a href="https://github.com/jcyoder/Graphic-Design/tree/gh-pages/photoshop" target="_blank">View source files</a></li>
+                  </ul>
+              <h3>Recent Work</h3>
+
+              <div class="row">
+                <div class="row-wrapper">
+                  <div class="col-md-6">
+                    <img class="img-responsive" src="images/gotpain400px.jpg" alt="noni ad"/><br />
+                    <p>At work, I regularly get assigned to create artwork for Noni emails.  Hawaiian Organic Noni is a farm/business located in Hawaii.</p>
+                  </div>
+                  <div class="col-md-6">
+                    <img class="img-responsive" src="images/noni-email-1-400px.jpg" alt="noni ad"/>
+                    <br />
+                    <p>This is one of my favorite email ads for Noni that I created.  I like the colors and got to do some masking, opacity changes, and other effects.</p>
+                  </div>
+              </div>
+              </div>
+              <p>&nbsp;</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <img class="img-responsive" src="images/coupon.jpg" alt="coupon ad"/><br />
+                  <p>Printed coupon advertisement for a local company.</p>
+                </div>
+                <div class="col-md-6">
+                  <img class="img-responsive" src="images/LogTimberHomeShow.jpg" alt="ad"/><br />
+                  <p>This artwork is one of my favorite pieces because I love the colors of fall. I used drop shadow and outer glow effects along with some masking.  This ad was featured as one of the rotating image slides on the Log Home Maintenance and Supply Website.</p>
+                </div>
+              </div>
+              <p>&nbsp;</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <img class="img-responsive" src="images/noni-twitter-ad700px.jpg" alt="twitter ad"/><br />
+                  <p>Noni Twitter Advertisement</p>
+                </div>
+                <div class="col-md-6">
+                  <p>&nbsp;</p>
+                </div>
+                <div class="back-to-top-button pull-right"></div>
+              </div>
+              <p>&nbsp;</p>
+
+          </div> <!--photoshop-wrapper -->
+          <div class="illustrator-wrapper">  
+            <div class="illustrator">
+              <h2 id="illustrator">Adobe Illustrator</h2>
+            </div> <!--illustrator -->
+            <p>&nbsp</p>
+            <h3>Links to PDF and .AI files of artwork</h3>
+            <p>Here you will find a downloadable PDF of my artwork as well as links to the .ai files.</p>
+            <ul>
+              <li><a href="https://github.com/jcyoder/Graphic-Design/tree/gh-pages/illustrator/illustrator.pdf" target="_blank">PDF of artwork</a></li>
+              <li><a href="https://github.com/jcyoder/Graphic-Design/tree/gh-pages/illustrator" target="_blank">View source files</a></li>
             </ul>
-            
-		</div>
-		<div class="projects">
-			<h1>Key Web Projects</h1>
-			<ul class="projlist">
-				<li>
-					Dr. Nuzum<br />
-					<p class="projdesc">
-						This site is created with Bootstrap Twitter and is incorporated with the AllProWebTool's platform (contains product selection and shopping cart).  
-						The site is live and the source has been given to the client. They may have made changes on their own.
-						<a class="projlinks" href="http://drnuzum.com" target="_blank">View website</a>
-					</p>
-				</li>
-				<li>
-					Acorn Capital<br />
-					<p class="projdesc">
-						This site is created with Bootstrap Twitter and is incorporated with the AllProWebTool's platform.  
-						The site is live and the source has been given to the client. They may have made changes on their own.
-						<a class="projlinks" href="http://acorncapitalventures.com/" target="_blank">View website</a>
-					</p>
-				</li>
-				<li>
-					The Kitchen Website<br/>
-					<p class="projdesc"> 
-						This five page site uses HTML5 and CSS3 to demonstrate the use of HTML forms, a Google form, 
-						an embedded Google map, tables, AJAX calls, @media for responsive design and a small amount of jQuery.
-						<a class="projlinks" href="http://jcyoder.github.io/NewKitchen/index.html" target="_blank" >View website</a>
-						<a class="projlinks" href="https://github.com/jcyoder/NewKitchen/tree/gh-pages" target="_blank">View source code</a>
-					</p>
-				</li>
-				<li>Todos Web Application<br />
-					<p class="projdesc" >
-						Todos demonstrates the use of HTML5, CSS3, and jQuery to allow users to add, remove, edit, cross off, and filter todo list items.
-						<a href="http://jcyoder.github.io/todo-app/index.html" target="_blank">View website</a>
-						<a href="https://github.com/jcyoder/todo-app/tree/gh-pages" target="_blank">View source code</a>
-						
-					</p>
-				</li>
-				<li>Calculator <br />
-					<p class="projdesc">
-						This tool uses Traditional HTML5, CSS3 and JavaScript event handlers to create a basic calculator.
-						<a href="http://jcyoder.github.io/Calculator/calculator.html" target="_blank">View website</a>
-						<a href="https://github.com/jcyoder/Calculator/tree/gh-pages" target="_blank">View source code</a>
-					</p>
-					
-				</li>
-				<li>Colorado Travel <br />
-					<p class="projdesc">
-						Main page example showing the use of jQuery event handlers for menu/submenu navigation and the use of responsive design.
-						<a href="http://jcyoder.github.io/ColoradoTravel/myPage.htm" target="_blank">View website</a>
-						<a href="https://github.com/jcyoder/ColoradoTravel/tree/gh-pages" target="_blank">View source code</a>
-					</p>
-				</li>
-				<li>The Paper Petal <br />
-					<p class="projdesc">
-						Static website built with Bootstrap.  Makes use of carousels, panels and thumbnail views.  Added in
-						the fancyBox version 2 library as well.
-						<a href="http://jcyoder.github.io/ThePaperPetal/index.html" target="_blank">View website</a>
-						<a href="https://github.com/jcyoder/ThePaperPetal/tree/gh-pages" target="_blank">View source code</a>
-					</p>
-				</li>
-			</ul>
-		</div>
-		
-		
-    </body>
+            <h3>Artwork</h3>
+            <div class="row">
+              <div class="row-wrapper">
+                <div class="col-md-4">
+                  <img class="img-responsive" src="images/smores-event700px.png" alt="world record event"/><br />
+                  <p>This illustration was created for Stuff'n Mallow's world record attempt for the most people making s'mores simultaneously. </p>
+                </div>
+                <div class="col-md-4">
+                  <img class="img-responsive" src="images/smile-mug-adjusted-final.png" alt="smile mug"/>
+                  <br />
+                  <p>This is my favorite illustration because the mug looks so real.  The illustration was created using the mesh tool and the pen tool.</p>
+                </div>
+                <div class="col-md-4">
+                  <img class="img-responsive" src="images/stamps.png" alt="stamp illustration"/><br />
+                  <p>This piece was done with the pen tool, rotation and transform again options.</p>
+                </div>
+              </div>
+            </div>
+            <p>&nbsp;</p>
+            <div class="row">
+              <div class="row-wrapper">
+                <div class="col-md-4">
+                  <img class="img-responsive" src="images/zoo-cards.jpg" alt="zoo card designs"/>
+                  <br />
+                  <p>More pen tool work.</p>
+                </div>
+                <div class="col-md-4">
+                  <img class="img-responsive" src="images/alfred-nobel.jpg" alt="poster"/><br />
+                  <p>Educational poster. Typography and layout exercise. </p>
+                </div>
+                <div class="col-md-4">
+                  <img class="img-responsive" src="images/perspective-building.jpg" alt="building"/>
+                  <br />
+                  <p>Building created with the perspective tool.</p>
+                </div>
+              </div>
+            </div>
+            <p>&nbsp;</p>
+            <div class="row">
+              <div class="row-wrapper">
+                <div class="col-md-4">
+                  <img class="img-responsive" src="images/grid3.jpg" />
+                  <br />
+                  <p>Practice using a grid for layout.</p>
+                </div>
+                <div class="col-md-4">
+                  <img class="img-responsive" src="images/grid1.jpg" />
+                  <br />
+                  <p>Using the same photos/colors in a different grid layout.</p>
+                </div>
+                <div class="col-md-4">
+                  <img class="img-responsive" src="images/grid2.jpg" /><br />
+                  <p>More practice with grid layout.</p>
+                </div>
+              </div>
+            </div>
+            <p>&nbsp;</p>
+            <div class="row">
+              <div class="row-wrapper">
+                
+                <div class="col-md-4">
+                  <img class="img-responsive" src="images/giovanni-cover-create-outlines.jpg" /><br />
+                  <p>Front cover to menu. Typography and layout.</p>
+                </div>
+                <div class="col-md-4">
+                  <img class="img-responsive" src="images/giovannis-menu-co.jpg" />
+                  <br />
+                  <p>Inside left menu page.</p>
+                </div>
+                <div class="col-md-4">
+                  <img class="img-responsive" src="images/giovanni-backcover.jpg" /><br />
+                  <p>Inside right menu page.</p>
+                </div>
+              </div>
+              <div class="back-to-top-button pull-right">
+            </div>
+            <p>&nbsp;</p>
+            <div class="row">
+              <div class="row-wrapper">
+                <div class="col-md-4">
+                  <img class="img-responsive" src="images/selfportrait.jpg" /><br />
+                  <p>Self Portrait</p>
+                </div>
+                <div class="col-md-4">
+                  &nbsp;
+                </div>
+                <div class="col-md-4">
+                  &nbsp;
+                </div>
+              </div>
+            </div>
+            <p>&nbsp;</p>
+          </div> <!--illustrator-wrapper -->
+          <div class="indesign-wrapper">
+            <div class="indesign">
+              <h2 id="indesign">Adobe InDesign</h2>
+            </div> <!--indesign -->
+            <h3>Links to InDesign sample work.
+              <ul class="reflist">
+                <li><a href="https://github.com/jcyoder/Graphic-Design/tree/gh-pages/inDesign/JYoderCalendar.pdf" target="_blank" >PDF of calendar</a></li>
+                <li><a href="https://github.com/jcyoder/Graphic-Design/tree/gh-pages/inDesign/BookletFinal/Booklet.pdf" target="_blank">PDF of 8 page booklet</a></li>
+                <li><a href="https://github.com/jcyoder/Graphic-Design/tree/gh-pages/inDesign" target="_blank">View source files</a></li>
+            </ul>
+            <p>&nbsp</p>
+          </div> <!-- indesign-wrapper -->
+        </div> <!-- col-md-12 --> 
+      </div> <!-- row -->
+    </div> <!-- container -->
+  </div> <!-- portfolio-content -->
+  <footer>
+  <div class="container">  
+    <div class="back-to-top-button pull-right">
+    </div>
+  </div>
+  </footer>
+  </div> 
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.fancybox').fancybox();
+      });
+
+      $('.back-to-top-button').click( function() {
+        $('html, body').animate({scrollTop : 0},600);
+        return false;
+      });
+    </script>
+  </body>
 </html>
