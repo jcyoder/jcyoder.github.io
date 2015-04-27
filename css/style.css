@@ -160,8 +160,8 @@ a.btn.btn-default:active {
   margin: 0px;
   padding: 0px;
   background: #999 url("../images/portfolio2.png") no-repeat;
-  background-size: 100%;
-  background-position: 0px;
+  background-size: cover;
+  background-position: top right;
 }
 
 .about-wrapper h2 {
