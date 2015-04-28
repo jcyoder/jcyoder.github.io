@@ -219,13 +219,20 @@ a.btn.btn-default:active {
     font-size: 13px;
   }
 
-  .about-wrapper {
+  
+}
+
+@media screen and(max-width: 785px) {
+
+  
+}
+
+@media screen and (max-width: 767px) {
+
+.about-wrapper {
 
     background: #999;
   }
-}
-@media screen and (max-width: 767px) {
-
   .btn-group-justified>.btn-group .btn {
     font-size: 11px;
   }
