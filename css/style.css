@@ -204,6 +204,11 @@ a.btn.btn-default:active {
   word-wrap: break-word;
 }
 
+.web-dev-wrapper .thumbnail {
+    padding: 6px;
+    min-height: 400px;
+}
+
 /*========== Responsiveness ==========*/
 
 @media screen and (max-width: 1200px) {
